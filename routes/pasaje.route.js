@@ -6,7 +6,7 @@ const router = express.Router();
 //definimos las rutas para la gestion de libro
 router.get('/', pasajeCtrl.getPasajes);
 router.post('/', pasajeCtrl.createPasaje);
-router.delete('/', pasajeCtrl.deletePasaje);
+router.delete('/:id', pasajeCtrl.deletePasaje);
 router.put('/:id', pasajeCtrl.editPasaje);
 router.get('/:categoriaPasajero', pasajeCtrl.getPasaje);
 
